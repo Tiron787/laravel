@@ -1,4 +1,4 @@
-    @extends('layouts.layout') <!--подключение к шаблону layout-->
+    @extends('layouts.layout', ['title'=>'главная страница']) <!--подключение к шаблону layout-->
     @section('content')
 
 @if(isset($_GET['search'])) <!--если есть с ключом search-->

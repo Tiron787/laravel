@@ -1,4 +1,4 @@
-@extends('layouts.layout') <!--подключение к шаблону layout-->
+@extends('layouts.layout', ['title'=>"Редактировать Пост №$post->post_id"]) <!--подключение к шаблону layout-->
 @section('content')
 
     <form action="{{ route('post.update',['id'=>$post->post_id]) }}" method="post" enctype="multipart/form-data">
@@ -11,5 +11,6 @@
     </form>
 
 @endsection
+
 
 

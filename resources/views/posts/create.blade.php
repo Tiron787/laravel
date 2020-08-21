@@ -1,4 +1,4 @@
-@extends('layouts.layout') <!--подключение к шаблону layout-->
+@extends('layouts.layout', ['title'=>"Создать новый пост"]) <!--подключение к шаблону layout-->
 @section('content')
 
     <form action="{{ route('post.store') }}" method="post" enctype="multipart/form-data">
